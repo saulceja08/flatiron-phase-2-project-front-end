@@ -1,10 +1,11 @@
-import GameHeader from "./components/GameHeader";
-import GameList from "./components/GameList";
-import GameFooter from "./components/GameFooter";
-import { useEffect } from "react";
+import React, { useState, useEffect } from 'react';
+import GameHeader from './components/GameHeader';
+import GameList from './components/GameList';
+import GameFooter from './components/GameFooter';
 
 function App() {
-  //fetch data using GET request and handle errors
+  const [gameData, setGameData] = useState(null);
+
   useEffect(() => {
     fetch('http://localhost:3000/game')
       .then(response => {
@@ -14,20 +15,19 @@ function App() {
         return response.json();
       })
       .then(data => {
-        // Handle the retrieved data
-        console.log(data);
+        // Store the fetched data in state
+        setGameData(data);
       })
       .catch(error => {
-        // Handle any errors that occurred during the request
         console.error('Error:', error.message);
       });
   }, []);
 
   return (
     <>
-      <GameHeader />
-      <GameList />
-      <GameFooter />
+      <GameHeader data={gameData} />
+      <GameList data={gameData} />
+      <GameFooter data={gameData} />
     </>
   );
 }
