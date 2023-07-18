@@ -24,11 +24,11 @@ function App() {
   }, []);
 
   return (
-    <>
+    <div className='app-container'>
       <GameHeader data={gameData} />
       <GameList data={gameData} />
       <GameFooter data={gameData} />
-    </>
+    </div> 
   );
 }
 

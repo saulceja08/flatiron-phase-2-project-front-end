@@ -2,7 +2,7 @@ import React from 'react'
 
 function GameFooter() {
   return (
-    <p>GameFooter</p>
+    <div>GameFooter</div>
   )
 }
 

@@ -2,7 +2,7 @@ import React from 'react'
 
 function GameHeader() {
   return (
-    <p>GameHeader</p>
+    <div>GameHeader</div>
   )
 }
 

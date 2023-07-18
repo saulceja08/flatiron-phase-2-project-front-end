@@ -2,7 +2,7 @@ import React from 'react'
 
 function GameList() {
   return (
-    <p>GameList</p>
+    <div>GameList</div>
   )
 }
 
