@@ -6,7 +6,6 @@ body {
   background-position: center;
   margin: 0;
   padding: 0;
-  width: 120px
 }
 
 body::before {
@@ -20,15 +19,36 @@ body::before {
   z-index: -1;
 }
 
-.gameHeader {
-  background-color: rgba(10,10,10);
-  margin-top: 20px; 
-  height: 75px;
+.game-header {
+  background-color: rgba(20, 20, 20, 0.8);
 }
 
-.gameHeader2 {
-  background-image: url('https://pngimg.com/uploads/call_of_duty/call_of_duty_PNG53.png');
-  background-color: white;
-  image-width: 180px;
-  margin-right: 40px;
+.game-header h1{
+  color:azure;
+}
+
+/* YourComponent.css (separate CSS file or styled-components) */
+
+.tab-list {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f0f0f0;
+  padding: 8px;
+}
+
+.tab {
+  padding: 8px 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.tab:hover {
+  background-color: #e0e0e0;
+}
+
+.tab.active {
+  background-color: #007bff;
+  color: #fff;
 }

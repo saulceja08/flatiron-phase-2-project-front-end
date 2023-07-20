@@ -1,11 +1,11 @@
 import React from 'react'
+import HeaderTabs from './HeaderTabs'
 
 function GameHeader() {
   return (
-    <div className='gameHeader'>
-      <div className= 'gameHeader2'>
+    <div className='game-header'>
         <h1>Game Header</h1>
-      </div>
+        <HeaderTabs/>
     </div>
   )
 }
