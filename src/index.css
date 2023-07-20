@@ -1,6 +1,34 @@
-.app-container {
-    background-image: url('https://e1.pxfuel.com/desktop-wallpaper/869/182/desktop-wallpaper-cod-zombies-cell-cod-zombies-perks.jpg');
-    background-size: cover;
-    background-position: center;
-    opacity: 0.8;
-  }
+body {
+  position: relative;
+  background-image: url('https://greencade.com/wp-content/uploads/2023/03/woa4lyd7j6b11.png');
+  background-color: black;
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+  width: 120px
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Set the overlay color with transparency */
+  z-index: -1;
+}
+
+.gameHeader {
+  background-color: rgba(10,10,10);
+  margin-top: 20px; 
+  height: 75px;
+}
+
+.gameHeader2 {
+  background-image: url('https://pngimg.com/uploads/call_of_duty/call_of_duty_PNG53.png');
+  background-color: white;
+  image-width: 180px;
+  margin-right: 40px;
+}

@@ -16,7 +16,8 @@ function App() {
       })
       .then(data => {
         // Store the fetched data in state
-        setGameData(data);
+        setGameData(data)
+        console.log(data);
       })
       .catch(error => {
         console.error('Error:', error.message);
@@ -24,7 +25,7 @@ function App() {
   }, []);
 
   return (
-    <div className='app-container'>
+    <div>
       <GameHeader data={gameData} />
       <GameList data={gameData} />
       <GameFooter data={gameData} />
