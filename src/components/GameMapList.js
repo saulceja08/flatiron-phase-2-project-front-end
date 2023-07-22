@@ -6,14 +6,18 @@ function GameMapList({ gameData }) {
     return <div>No games available</div>;
   }
 
-
   return (
     <div className='map-app'>
-      {gameData.maps.map((gameMap) => (
-        <div key={gameMap.maps.id}>
-          <h2 className='list-text'>{gameMap.maps.name}</h2>
-          <p className='list-text'>{gameMap.maps.location}</p>
-          <img className="map-image" src={gameMap.maps.image} alt={gameMap.maps.name} />
+      {gameData.map((game) => (
+        <div key={game.id}>
+          <h2 className='list-text'>{game.name}</h2>
+          {game.zombieMaps.map((zombieMap) => (
+            <div key={zombieMap.id}>
+              <h3 className='list-text'>{zombieMap.name}</h3>
+              <p className='list-text'>{zombieMap.location}</p>
+              <img className="map-image" src={zombieMap.image} alt={zombieMap.name} />
+            </div>
+          ))}
         </div>
       ))}
     </div>
