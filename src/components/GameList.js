@@ -7,12 +7,12 @@ const GameList = ({ gameData }) => {
   }
 
   return (
-    <div>
-      {gameData.map(game => (
+    <div className='game-list'>
+      {gameData.map((game) => (
         <div key={game.id}>
           <h2>{game.name}</h2>
           <p>{game.dateReleased}</p>
-          {/* Add any other game details you want to display */}
+          <img src={game.image} alt={game.name} />
         </div>
       ))}
     </div>
