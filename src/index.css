@@ -75,3 +75,9 @@ body::before {
   overflow-x: auto;
   flex-wrap: nowrap;
 }
+
+.map-image {
+  width: 300px; 
+  height: 200px; 
+  object-fit: cover; 
+}

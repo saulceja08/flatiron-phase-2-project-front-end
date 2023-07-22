@@ -14,7 +14,8 @@ const GameList = ({ gameData }) => {
           <h2 className='list-text'>{game.name}</h2>
           <p className='list-text'>{game.dateReleased}</p>
           <img className="game-image" src={game.image} alt={game.name} />
-          <GameMapList gameData={gameData}/>
+          {/* Pass the specific zombieMaps data for this game */}
+          <GameMapList zombieMaps={game.zombieMaps} />
         </div>
       ))}
     </div>
