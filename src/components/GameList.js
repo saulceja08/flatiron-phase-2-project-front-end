@@ -1,6 +1,4 @@
 import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css'
-
 
 const GameList = ({ gameData }) => {
   // Ensure gameData exists and is an array before using map
@@ -9,12 +7,12 @@ const GameList = ({ gameData }) => {
   }
 
   return (
-    <div className='container-fluid'>
+    <div className='game-app'>
       {gameData.map((game) => (
         <div key={game.id}>
-          <h2>{game.name}</h2>
-          <p>{game.dateReleased}</p>
-          <img src={game.image} alt={game.name} />
+          <h2 className='list-text'>{game.name}</h2>
+          <p className='list-text'>{game.dateReleased}</p>
+          <img className="game-image" src={game.image} alt={game.name} />
         </div>
       ))}
     </div>

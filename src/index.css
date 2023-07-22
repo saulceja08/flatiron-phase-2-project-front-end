@@ -60,6 +60,18 @@ body::before {
   justify-content: flex-end;
 }
 
-.game-list {
+.list-text {
   color: white;
+}
+
+
+.game-image {
+  width: 200px; 
+  height: 300px; 
+  object-fit: cover; 
+}
+
+.game-app > .row{
+  overflow-x: auto;
+  flex-wrap: nowrap;
 }
