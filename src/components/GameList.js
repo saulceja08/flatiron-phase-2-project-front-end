@@ -1,4 +1,5 @@
 import React from 'react';
+import GameMapList from './GameMapList';
 
 const GameList = ({ gameData }) => {
   // Ensure gameData exists and is an array before using map
@@ -13,6 +14,7 @@ const GameList = ({ gameData }) => {
           <h2 className='list-text'>{game.name}</h2>
           <p className='list-text'>{game.dateReleased}</p>
           <img className="game-image" src={game.image} alt={game.name} />
+          <GameMapList gameData={gameData}/>
         </div>
       ))}
     </div>

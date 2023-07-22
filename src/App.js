@@ -8,7 +8,7 @@ function App() {
   const [gameData, setGameData] = useState(null);
 
   useEffect(() => {
-    fetch('http://localhost:3001/games')
+    fetch('http://localhost:3000/games')
       .then(response => {
         if (!response.ok) {
           throw new Error('Network response was not OK');
