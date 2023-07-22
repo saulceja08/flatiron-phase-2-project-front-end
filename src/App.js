@@ -7,7 +7,7 @@ function App() {
   const [gameData, setGameData] = useState(null);
 
   useEffect(() => {
-    fetch('http://localhost:3000/game')
+    fetch('http://localhost:3001/games')
       .then(response => {
         if (!response.ok) {
           throw new Error('Network response was not OK');
@@ -16,7 +16,7 @@ function App() {
       })
       .then(data => {
         // Store the fetched data in state
-        setGameData(data)
+        setGameData(data);
         console.log(data);
       })
       .catch(error => {
@@ -26,10 +26,11 @@ function App() {
 
   return (
     <div>
-      <GameHeader data={gameData} />
-      <GameList data={gameData} />
-      <GameFooter data={gameData} />
-    </div> 
+      <GameHeader />
+      {/* Pass the gameData as a prop to GameList component */}
+      <GameList gameData={gameData} />
+      <GameFooter />
+    </div>
   );
 }
 
