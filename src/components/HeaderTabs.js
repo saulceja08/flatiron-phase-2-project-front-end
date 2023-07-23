@@ -4,7 +4,7 @@ import Games from './Games';
 import Consoles from './Games';
 import Support from './Support';
 
-function HeaderTabs() {
+function HeaderTabs({gameData}) {
   const imageUrl = 'https://logolook.net/wp-content/uploads/2021/08/Call-of-Duty-Logo-2011.png';
 
   return (
@@ -13,7 +13,7 @@ function HeaderTabs() {
         <img src={imageUrl} alt='Tab Icon' />
       </div>
       <div className="tabs">
-        <SearchBar/>
+        <SearchBar gameData={gameData} placeholder="Search for ..."/>
         <Games/>
         <Consoles/>
         <Support/>
