@@ -3,7 +3,7 @@ import HeaderTabs from './HeaderTabs'
 
 function GameHeader() {
   return (
-    <div className='game-header'>
+    <div>
         <HeaderTabs/>
     </div>
   )

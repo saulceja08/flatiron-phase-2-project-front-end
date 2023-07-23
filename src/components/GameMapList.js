@@ -1,18 +1,23 @@
 import React from 'react';
 
-function GameMapList({ zombieMaps }) {
-  // Ensure zombieMaps exists and is an array before using map
-  if (!zombieMaps || !Array.isArray(zombieMaps)) {
-    return <div>No maps available</div>;
+function GameMapList({ gameData }) {
+  // Ensure gameData exists and is an array before using map
+  if (!gameData || !Array.isArray(gameData)) {
+    return <div>No games available</div>;
   }
 
   return (
     <div className='map-app'>
-      {zombieMaps.map((zombieMap) => (
-        <div key={zombieMap.id}>
-          <h3 className='list-text'>{zombieMap.name}</h3>
-          <p className='list-text'>{zombieMap.location}</p>
-          <img className="map-image" src={zombieMap.image} alt={zombieMap.name} />
+      {gameData.map((game) => (
+        <div key={game.id}>
+          <h2 className='list-text'>{game.name}</h2>
+          {game.zombieMaps.map((zombieMap) => (
+            <div key={zombieMap.id}>
+              <h3 className='list-text'>{zombieMap.name}</h3>
+              <p className='list-text'>{zombieMap.location}</p>
+              <img className="map-image" src={zombieMap.image} alt={zombieMap.name} />
+            </div>
+          ))}
         </div>
       ))}
     </div>
