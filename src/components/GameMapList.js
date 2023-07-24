@@ -5,7 +5,7 @@ function GameMapList() {
   const [gameData, setGameData] = useState([]);
 
   useEffect(() => {
-    fetch("")
+    fetch("https://saulceja08-flatiron-phase-2-back-end.onrender.com/games")
       .then((response) => {
         if (!response.ok) {
           throw new Error("Network response was not OK");
