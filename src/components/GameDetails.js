@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 
-const GameDetail = () => {
+const GameDetails = () => {
   const { gameid } = useParams();
 
   const [gamedata, setGameData] = useState({}); // Rename the state setter function
@@ -48,4 +48,4 @@ const GameDetail = () => {
   );
 };
 
-export default GameDetail;
+export default GameDetails;
