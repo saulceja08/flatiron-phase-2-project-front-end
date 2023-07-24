@@ -28,6 +28,9 @@ function GameList() {
           <h2>Call of Duty: Games</h2>
         </div>
         <div className='card-body'>
+          <div>
+            <Link className='btn btn-success'>Add New(+)</Link>
+          </div>
           <table className='table-bordered'>
             <thead className='bg-dark text-white'>
               <tr>
