@@ -1,6 +1,26 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react';
 
 function GameList() {
+  const [gameData, setGameData] = useState(null);
+
+  useEffect(() => {
+    fetch('http://localhost:3000/games')
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('Network response was not OK');
+        }
+        return response.json();
+      })
+      .then(data => {
+        // Store the fetched data in state
+        setGameData(data);
+        console.log(data);
+      })
+      .catch(error => {
+        console.error('Error:', error.message);
+      });
+  }, []);
+
   return (
     <div className='container'>
       <div className='card'>
@@ -11,24 +31,38 @@ function GameList() {
           <table className='table-bordered'>
             <thead className='bg-dark text-white'>
               <tr>
-                <td>id</td>
-                <td>name</td>
-                <td>details</td>
-                <td>image</td>
-                <td>action</td>
+                <th>id</th>
+                <th>name</th>
+                <th>dateReleased</th>
+                <th>consoles</th>
+                <th>action</th>
               </tr>
-            </thead>
+              </thead>
             <tbody>
-              
+              {gameData &&
+                gameData.map(item => (
+                  <tr key={item.id}>
+                    <td>{item.id}</td>
+                    <td>{item.name}</td>
+                    <td>{item.dateReleased}</td>
+                    <td>{item.image}</td>
+                    <td>
+                      <button className='btn btn-success'>Edit</button>
+                      <button className='btn btn-danger'>Remove</button>
+                      <button className='btn btn-primary'>Details</button>
+                    </td>
+                  </tr>
+                ))}
             </tbody>
           </table>
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default GameList
+export default GameList;
+
 
 /*import React from 'react';
 import GameMapList from './GameMapList';
