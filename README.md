@@ -3,7 +3,7 @@
 These are two React components for editing and displaying game details in a web application. The components are part of a larger project for managing video game information.
 
 ## Important Links
-Back-End Deploy: https://saulceja08-flatiron-phase-2-back-end.onrender.com/
+Back-End Deploy: https://saulceja08-flatiron-phase-2-back-end.onrender.com
 Front-End Deploy: https://64be028cb6caba1690982ea1--stirring-seahorse-f83623.netlify.app/
 Back-End Repo: https://github.com/saulceja08/ flatiron-phase-2-project-back-end.git
 
