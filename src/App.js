@@ -18,7 +18,7 @@ function App() {
         <Routes>
           <Route path='/' element={<GameList/>}></Route>
           <Route path='/games/create' element={<GameCreate/>}></Route>
-          <Route path='/games/edit/gameid' element={<GameEdit/>}></Route>
+          <Route path='/games/edit/:gameid' element={<GameEdit/>}></Route>
           <Route path='/detail/:gameid' element={<GameDetails/>}></Route>
         </Routes>
       </BrowserRouter>
