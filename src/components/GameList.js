@@ -1,4 +1,36 @@
-import React from 'react';
+import React from 'react'
+
+function GameList() {
+  return (
+    <div className='container'>
+      <div className='card'>
+        <div className='card-title'>
+          <h2>Call of Duty: Games</h2>
+        </div>
+        <div className='card-body'>
+          <table className='table-bordered'>
+            <thead className='bg-dark text-white'>
+              <tr>
+                <td>id</td>
+                <td>name</td>
+                <td>details</td>
+                <td>image</td>
+                <td>action</td>
+              </tr>
+            </thead>
+            <tbody>
+              
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+export default GameList
+
+/*import React from 'react';
 import GameMapList from './GameMapList';
 
 const GameList = ({ gameData }) => {
@@ -14,7 +46,6 @@ const GameList = ({ gameData }) => {
           <h2 className='list-text'>{game.name}</h2>
           <p className='list-text'>{game.dateReleased}</p>
           <img className="game-image" src={game.image} alt={game.name} />
-          {/* Pass the specific zombieMaps data for this game */}
           <GameMapList zombieMaps={game.zombieMaps} />
         </div>
       ))}
@@ -23,3 +54,4 @@ const GameList = ({ gameData }) => {
 };
 
 export default GameList;
+*/
