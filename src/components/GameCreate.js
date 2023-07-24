@@ -13,8 +13,8 @@ const GameCreate = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     const gameData = { id, name, dateReleased, image };
-
-    fetch("http://localhost:3000/employee", {
+  
+    fetch("http://localhost:3000/games", { // Update the endpoint URL
       method: "POST",
       headers: { "content-type": "application/json" },
       body: JSON.stringify(gameData),

@@ -4,7 +4,7 @@ import { Link, useParams } from "react-router-dom";
 const GameDetail = () => {
   const { gameid } = useParams();
 
-  const [gamedata, gamedatachange] = useState({});
+  const [gamedata, setGameData] = useState({}); // Rename the state setter function
 
   useEffect(() => {
     fetch("http://localhost:3000/games/" + gameid)
@@ -15,7 +15,7 @@ const GameDetail = () => {
         return res.json();
       })
       .then((resp) => {
-        gamedatachange(resp);
+        setGameData(resp); // Update the state using setGameData
       })
       .catch((err) => {
         console.log(err.message);
@@ -30,7 +30,7 @@ const GameDetail = () => {
             <h2>Game Details</h2>
           </div>
           <div className="card-body">
-            {Object.keys(gamedata).length !== 0 ? ( // Check if gamedata is not empty
+            {Object.keys(gamedata).length !== 0 ? (
               <div>
                 <h2>Game Name: <b>{gamedata.name}</b> ({gamedata.id})</h2>
                 <h3>Details</h3>
