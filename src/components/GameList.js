@@ -5,7 +5,7 @@ function GameList() {
   const [gameData, setGameData] = useState(null);
 
   useEffect(() => {
-    fetch("http://localhost:3000/games")
+    fetch("https://saulceja08-flatiron-phase-2-back-end.onrender.com/games")
       .then((response) => {
         if (!response.ok) {
           throw new Error("Network response was not OK");

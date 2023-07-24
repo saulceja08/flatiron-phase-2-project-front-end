@@ -14,7 +14,7 @@ const GameCreate = () => {
     e.preventDefault();
     const gameData = { id, name, dateReleased, image };
   
-    fetch("http://localhost:3000/games", { // Update the endpoint URL
+    fetch("https://saulceja08-flatiron-phase-2-back-end.onrender.com/games", { // Update the endpoint URL
       method: "POST",
       headers: { "content-type": "application/json" },
       body: JSON.stringify(gameData),

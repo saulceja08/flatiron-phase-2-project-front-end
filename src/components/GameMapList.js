@@ -1,24 +1,24 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 
 function GameMapList() {
   // Ensure gameData exists and is an array before using map
   const [gameData, setGameData] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:3000/games')
-      .then(response => {
+    fetch("")
+      .then((response) => {
         if (!response.ok) {
-          throw new Error('Network response was not OK');
+          throw new Error("Network response was not OK");
         }
         return response.json();
       })
-      .then(data => {
+      .then((data) => {
         // Store the fetched data in state
         setGameData(data);
         console.log(data);
       })
-      .catch(error => {
-        console.error('Error:', error.message);
+      .catch((error) => {
+        console.error("Error:", error.message);
       });
   }, []);
 
@@ -28,15 +28,15 @@ function GameMapList() {
 
   return (
     <div className="game-app">
-  {gameData.map((game) => (
-    <div key={game.id} className="game-card">
-      <h2 className="list-text">{game.name}</h2>
-      <p className="list-text">{game.dateReleased}</p>
-      <img className="game-image" src={game.image} alt={game.name} />
+      {gameData.map((game) => (
+        <div key={game.id} className="game-card">
+          <h2 className="list-text">{game.name}</h2>
+          <p className="list-text">{game.dateReleased}</p>
+          <img className="game-image" src={game.image} alt={game.name} />
+        </div>
+      ))}
     </div>
-  ))}
-</div>
   );
-};
+}
 
 export default GameMapList;

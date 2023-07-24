@@ -7,7 +7,7 @@ const GameDetail = () => {
   const [gamedata, setGameData] = useState({}); // Rename the state setter function
 
   useEffect(() => {
-    fetch("http://localhost:3000/games/" + gameid)
+    fetch("https://saulceja08-flatiron-phase-2-back-end.onrender.com/games" + gameid)
       .then((res) => {
         if (!res.ok) {
           throw new Error('Network response was not OK');
