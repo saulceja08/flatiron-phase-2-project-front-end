@@ -12,7 +12,7 @@ const GameEdit = () => {
   const [validation, setValidation] = useState(false);
 
   useEffect(() => {
-    fetch("https://saulceja08-flatiron-phase-2-back-end.onrender.com/games" + gameid)
+    fetch("https://saulceja08-flatiron-phase-2-back-end.onrender.com/games/" + gameid)
       .then((res) => {
         if (!res.ok) {
           throw new Error("Network response was not OK");
@@ -37,7 +37,7 @@ const GameEdit = () => {
     e.preventDefault();
     const gameData = { id, name, dateReleased: date, consoleSupported: consoleSupported.split(", "), image };
 
-    fetch("http://localhost:3000/games/" + gameid, {
+    fetch("https://saulceja08-flatiron-phase-2-back-end.onrender.com/games/" + gameid, {
       method: "PUT",
       headers: { "content-type": "application/json" },
       body: JSON.stringify(gameData),
