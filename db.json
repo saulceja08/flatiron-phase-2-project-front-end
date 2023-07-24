@@ -5,434 +5,49 @@
       "name": "Call of Duty: World War II",
       "dateReleased": "November 3, 2017",
       "consoleSupported": ["PlayStation 4", "Xbox One", "PC"],
-      "image": "https://i.pinimg.com/originals/04/c2/79/04c279b9557116d8e2d1e7db09cecbc3.png",
-      "zombieMaps": [
-        {
-          "id": 1,
-          "name": "Nacht der Untoten",
-          "location": "Location 1",
-          "image": "https://callofdutymaps.com/wp-content/uploads/worldatwarnachtderuntoten1.jpg",
-          "details": "Details about Nacht der Untoten"
-        },
-        {
-          "id": 2,
-          "name": "Zombie Verrückt",
-          "location": "Map Pack 1",
-          "image": "https://static.tvtropes.org/pmwiki/pub/images/8ed3145398236e41549b1dc98e2b1dfe.png",
-          "details": "Details about Zombie Verrückt (Map Pack 1)"
-        },
-        {
-          "id": 3,
-          "name": "Shi No Numa",
-          "location": "Map Pack 2",
-          "image": "https://imgsvc.trackercdn.com/url/size(1280x720),fit(cover),quality(100)/https%3A%2F%2Ftrackercdn.com%2Fghost%2Fimages%2F2020%2F7%2F27413_maxresdefault.jpg/image.jpg",
-          "details": "Details about Shi No Numa (Map Pack 2)"
-        },
-        {
-          "id": 4,
-          "name": "Der Riese",
-          "location": "Map Pack 3",
-          "image": "https://callofdutymaps.com/wp-content/uploads/zombiesderriese1-1024x576.jpg",
-          "details": "Details about Der Riese (Map Pack 3)"
-        }
-      ]
+      "image": "https://i.pinimg.com/originals/04/c2/79/04c279b9557116d8e2d1e7db09cecbc3.png"
     },
     {
       "id": 2,
       "name": "Call of Duty: Black Ops",
       "dateReleased": "November 9, 2010",
       "consoleSupported": ["PlayStation 3", "Xbox 360", "PC"],
-      "image": "https://cdn.europosters.eu/image/750/posters/call-of-duty-black-ops-cover-i8700.jpg",
-      "zombieMaps": [
-        {
-          "id": 5,
-          "name": "Kino Der Toten",
-          "location": "Zombie Location 5",
-          "image": "http://example.com/map5.png",
-          "details": "Details about Kino Der Toten"
-        },
-        {
-          "id": 6,
-          "name": "Five",
-          "location": "Zombie Location 6",
-          "image": "http://example.com/map6.png",
-          "details": "Details about Five"
-        },
-        {
-          "id": 7,
-          "name": "Dead Ops Arcade",
-          "location": "Zombie Location 7",
-          "image": "http://example.com/map7.png",
-          "details": "Details about Dead Ops Arcade"
-        },
-        {
-          "id": 8,
-          "name": "Ascension",
-          "location": "First Strike DLC",
-          "image": "http://example.com/map8.png",
-          "details": "Details about Ascension (First Strike DLC)"
-        },
-        {
-          "id": 9,
-          "name": "Call of the Dead",
-          "location": "Escalation DLC",
-          "image": "http://example.com/map9.png",
-          "details": "Details about Call of the Dead (Escalation DLC)"
-        },
-        {
-          "id": 10,
-          "name": "Shangri-La",
-          "location": "Annihilation DLC",
-          "image": "http://example.com/map10.png",
-          "details": "Details about Shangri-La (Annihilation DLC)"
-        },
-        {
-          "id": 11,
-          "name": "Moon",
-          "location": "Rezurrection DLC",
-          "image": "http://example.com/map11.png",
-          "details": "Details about Moon (Rezurrection DLC)"
-        },
-        {
-          "id": 12,
-          "name": "Nacht der Untoten",
-          "location": "Rezurrection DLC",
-          "image": "http://example.com/map12.png",
-          "details": "Details about Nacht der Untoten (Rezurrection DLC)"
-        },
-        {
-          "id": 13,
-          "name": "Zombie Verrückt",
-          "location": "Rezurrection DLC",
-          "image": "http://example.com/map13.png",
-          "details": "Details about Zombie Verrückt (Rezurrection DLC)"
-        },
-        {
-          "id": 14,
-          "name": "Shi No Numa",
-          "location": "Rezurrection DLC",
-          "image": "http://example.com/map14.png",
-          "details": "Details about Shi No Numa (Rezurrection DLC)"
-        },
-        {
-          "id": 15,
-          "name": "Der Riese",
-          "location": "Rezurrection DLC",
-          "image": "http://example.com/map15.png",
-          "details": "Details about Der Riese (Rezurrection DLC)"
-        }
-      ]
+      "image": "https://cdn.europosters.eu/image/750/posters/call-of-duty-black-ops-cover-i8700.jpg"
     },
     {
       "id": 3,
       "name": "Call of Duty: Black Ops II",
       "dateReleased": "November 13, 2012",
       "consoleSupported": ["PlayStation 3", "Xbox 360", "PC"],
-      "image": "https://i.ebayimg.com/images/g/e-YAAOSwbK9kPvbq/s-l1600.jpg",
-      "zombieMaps": [
-        {
-          "id": 16,
-          "name": "TranZit",
-          "location": "Zombie Location 16",
-          "image": "http://example.com/map16.png",
-          "details": "Details about TranZit"
-        },
-        {
-          "id": 17,
-          "name": "Bus Depot (Survival)",
-          "location": "Zombie Location 17",
-          "image": "http://example.com/map17.png",
-          "details": "Details about Bus Depot (Survival)"
-        },
-        {
-          "id": 18,
-          "name": "Nuketown Zombies (Season Pass Bonus or Stand-alone)",
-          "location": "Zombie Location 18",
-          "image": "http://example.com/map18.png",
-          "details": "Details about Nuketown Zombies (Season Pass Bonus or Stand-alone)"
-        },
-        {
-          "id": 19,
-          "name": "Die Rise (Revolution DLC)",
-          "location": "Zombie Location 19",
-          "image": "http://example.com/map19.png",
-          "details": "Details about Die Rise (Revolution DLC)"
-        },
-        {
-          "id": 20,
-          "name": "Mob of the Dead (Uprising DLC)",
-          "location": "Zombie Location 20",
-          "image": "http://example.com/map20.png",
-          "details": "Details about Mob of the Dead (Uprising DLC)"
-        }
-      ]
+      "image": "https://i.ebayimg.com/images/g/e-YAAOSwbK9kPvbq/s-l1600.jpg"
     },
     {
       "id": 4,
       "name": "Call of Duty: Black Ops III",
       "dateReleased": "November 6, 2015",
       "consoleSupported": ["PlayStation 4", "Xbox One", "PC"],
-      "image": "https://data.xxlgamer.com/products/3393/bHIlAZgcjOItIQ-medium.jpg",
-      "zombieMaps": [
-        {
-          "id": 21,
-          "name": "Shadows of Evil",
-          "location": "Zombie Location 21",
-          "image": "http://example.com/map21.png",
-          "details": "Details about Shadows of Evil"
-        },
-        {
-          "id": 22,
-          "name": "Dead Ops Arcade 2: Cyber’s Avenging",
-          "location": "Zombie Location 22",
-          "image": "http://example.com/map22.png",
-          "details": "Details about Dead Ops Arcade 2: Cyber’s Avenging"
-        },
-        {
-          "id": 23,
-          "name": "The Giant (Season Pass Bonus or Stand-alone)",
-          "location": "Zombie Location 23",
-          "image": "http://example.com/map23.png",
-          "details": "Details about The Giant (Season Pass Bonus or Stand-alone)"
-        },
-        {
-          "id": 24,
-          "name": "Der Eisendrache (Awakening DLC)",
-          "location": "Zombie Location 24",
-          "image": "http://example.com/map24.png",
-          "details": "Details about Der Eisendrache (Awakening DLC)"
-        },
-        {
-          "id": 25,
-          "name": "Zetsubou No Shima (Eclipse DLC)",
-          "location": "Zombie Location 25",
-          "image": "http://example.com/map25.png",
-          "details": "Details about Zetsubou No Shima (Eclipse DLC)"
-        },
-        {
-          "id": 26,
-          "name": "Gorod Krovi (Descent DLC)",
-          "location": "Zombie Location 26",
-          "image": "http://example.com/map26.png",
-          "details": "Details about Gorod Krovi (Descent DLC)"
-        },
-        {
-          "id": 27,
-          "name": "Revelations (Salvation DLC)",
-          "location": "Zombie Location 27",
-          "image": "http://example.com/map27.png",
-          "details": "Details about Revelations (Salvation DLC)"
-        },
-        {
-          "id": 28,
-          "name": "Nacht der Untoten (Chronicles DLC)",
-          "location": "Zombie Location 28",
-          "image": "http://example.com/map28.png",
-          "details": "Details about Nacht der Untoten (Chronicles DLC)"
-        },
-        {
-          "id": 29,
-          "name": "Verrückt (Chronicles DLC)",
-          "location": "Zombie Location 29",
-          "image": "http://example.com/map29.png",
-          "details": "Details about Verrückt (Chronicles DLC)"
-        },
-        {
-          "id": 30,
-          "name": "Shi No Numa (Chronicles DLC)",
-          "location": "Zombie Location 30",
-          "image": "http://example.com/map30.png",
-          "details": "Details about Shi No Numa (Chronicles DLC)"
-        },
-        {
-          "id": 31,
-          "name": "Kino Der Toten (Chronicles DLC)",
-          "location": "Zombie Location 31",
-          "image": "http://example.com/map31.png",
-          "details": "Details about Kino Der Toten (Chronicles DLC)"
-        },
-        {
-          "id": 32,
-          "name": "Ascension (Chronicles DLC)",
-          "location": "Zombie Location 32",
-          "image": "http://example.com/map32.png",
-          "details": "Details about Ascension (Chronicles DLC)"
-        },
-        {
-          "id": 33,
-          "name": "Shangri-La (Chronicles DLC)",
-          "location": "Zombie Location 33",
-          "image": "http://example.com/map33.png",
-          "details": "Details about Shangri-La (Chronicles DLC)"
-        },
-        {
-          "id": 34,
-          "name": "Moon (Chronicles DLC)",
-          "location": "Zombie Location 34",
-          "image": "http://example.com/map34.png",
-          "details": "Details about Moon (Chronicles DLC)"
-        },
-        {
-          "id": 35,
-          "name": "Origins (Chronicles DLC)",
-          "location": "Zombie Location 35",
-          "image": "http://example.com/map35.png",
-          "details": "Details about Origins (Chronicles DLC)"
-        }
-      ]
+      "image": "https://data.xxlgamer.com/products/3393/bHIlAZgcjOItIQ-medium.jpg"
     },
     {
       "id": 5,
       "name": "Call of Duty: Black Ops IIII",
       "dateReleased": "October 12, 2018",
       "consoleSupported": ["PlayStation 4", "Xbox One", "PC"],
-      "image": "https://interfaceingame.com/wp-content/uploads/call-of-duty-black-ops-4/call-of-duty-black-ops-4-cover-375x500.jpg",
-      "zombieMaps": [
-        {
-          "id": 36,
-          "name": "Voyage of Despair",
-          "location": "Zombie Location 36",
-          "image": "http://example.com/map36.png",
-          "details": "Details about Voyage of Despair"
-        },
-        {
-          "id": 37,
-          "name": "IX",
-          "location": "Zombie Location 37",
-          "image": "http://example.com/map37.png",
-          "details": "Details about IX"
-        },
-        {
-          "id": 38,
-          "name": "Blood of The Dead",
-          "location": "Zombie Location 38",
-          "image": "http://example.com/map38.png",
-          "details": "Details about Blood of The Dead"
-        },
-        {
-          "id": 39,
-          "name": "Classified (Season Pass Bonus or Stand-alone)",
-          "location": "Zombie Location 39",
-          "image": "http://example.com/map39.png",
-          "details": "Details about Classified (Season Pass Bonus or Stand-alone)"
-        },
-        {
-          "id": 40,
-          "name": "Dead of the Night (DLC1)",
-          "location": "Zombie Location 40",
-          "image": "http://example.com/map40.png",
-          "details": "Details about Dead of the Night (DLC1)"
-        },
-        {
-          "id": 41,
-          "name": "Ancient Evil (DLC2)",
-          "location": "Zombie Location 41",
-          "image": "http://example.com/map41.png",
-          "details": "Details about Ancient Evil (DLC2)"
-        },
-        {
-          "id": 42,
-          "name": "Alpha Omega (DLC3)",
-          "location": "Zombie Location 42",
-          "image": "http://example.com/map42.png",
-          "details": "Details about Alpha Omega (DLC3)"
-        },
-        {
-          "id": 43,
-          "name": "Tag Der Toten (DLC4)",
-          "location": "Zombie Location 43",
-          "image": "http://example.com/map43.png",
-          "details": "Details about Tag Der Toten (DLC4)"
-        }
-      ]
+      "image": "https://interfaceingame.com/wp-content/uploads/call-of-duty-black-ops-4/call-of-duty-black-ops-4-cover-375x500.jpg"
     },
     {
       "id": 6,
       "name": "Call of Duty Black Ops: Cold War",
       "dateReleased": "November 13, 2020",
       "consoleSupported": ["PlayStation 5", "PlayStation 4", "Xbox Series X|S", "Xbox One", "PC"],
-      "image": "https://upload.wikimedia.org/wikipedia/en/4/40/Black_Ops_Cold_War.jpeg",
-      "zombieMaps": [
-        {
-          "id": 44,
-          "name": "Die Maschine",
-          "location": "Zombie Location 44",
-          "image": "http://example.com/map44.png",
-          "details": "Details about Die Maschine"
-        },
-        {
-          "id": 45,
-          "name": "Dead Ops Arcade 3: Rise of the Mamaback",
-          "location": "Zombie Location 45",
-          "image": "http://example.com/map45.png",
-          "details": "Details about Dead Ops Arcade 3: Rise of the Mamaback"
-        },
-        {
-          "id": 46,
-          "name": "Firebase Z",
-          "location": "Zombie Location 46",
-          "image": "http://example.com/map46.png",
-          "details": "Details about Firebase Z"
-        },
-        {
-          "id": 47,
-          "name": "Outbreak",
-          "location": "Zombie Location 47",
-          "image": "http://example.com/map47.png",
-          "details": "Details about Outbreak"
-        },
-        {
-          "id": 48,
-          "name": "Mauer der Toten",
-          "location": "Zombie Location 48",
-          "image": "http://example.com/map48.png",
-          "details": "Details about Mauer der Toten"
-        },
-        {
-          "id": 49,
-          "name": "Forsaken",
-          "location": "Zombie Location 49",
-          "image": "http://example.com/map49.png",
-          "details": "Details about Forsaken"
-        }
-      ]
+      "image": "https://upload.wikimedia.org/wikipedia/en/4/40/Black_Ops_Cold_War.jpeg"
     },
     {
       "id": 7,
       "name": "Call of Duty: Vanguard",
       "dateReleased": "November 5, 2021",
       "consoleSupported": ["PlayStation 5", "PlayStation 4", "Xbox Series X|S", "Xbox One", "PC"],
-      "image": "https://images.igdb.com/igdb/image/upload/t_1080p/co3kq8.jpg",
-      "zombieMaps": [
-        {
-          "id": 50,
-          "name": "Der Anfang",
-          "location": "Zombie Location 50",
-          "image": "http://example.com/map50.png",
-          "details": "Details about Der Anfang"
-        },
-        {
-          "id": 51,
-          "name": "Terra Maledicta",
-          "location": "Zombie Location 51",
-          "image": "http://example.com/map51.png",
-          "details": "Details about Terra Maledicta"
-        },
-        {
-          "id": 52,
-          "name": "Shi No Numa",
-          "location": "Zombie Location 52",
-          "image": "http://example.com/map52.png",
-          "details": "Details about Shi No Numa"
-        },
-        {
-          "id": 53,
-          "name": "The Archon",
-          "location": "Zombie Location 53",
-          "image": "http://example.com/map53.png",
-          "details": "Details about The Archon"
-        }
-      ]
+      "image": "https://images.igdb.com/igdb/image/upload/t_1080p/co3kq8.jpg"
     }
   ]
 }

@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 
 function GameList() {
   const [gameData, setGameData] = useState(null);
@@ -40,7 +41,7 @@ function GameList() {
                 <th>consoles</th>
                 <th>action</th>
               </tr>
-              </thead>
+            </thead>
             <tbody>
               {gameData &&
                 gameData.map(item => (
@@ -48,7 +49,7 @@ function GameList() {
                     <td>{item.id}</td>
                     <td>{item.name}</td>
                     <td>{item.dateReleased}</td>
-                    <td>{item.image}</td>
+                    <td>{item.consoles ? item.consoles.join(', ') : 'N/A'}</td> {/* Check if consoles exists */}
                     <td>
                       <button className='btn btn-success'>Edit</button>
                       <button className='btn btn-danger'>Remove</button>
@@ -65,30 +66,3 @@ function GameList() {
 }
 
 export default GameList;
-
-
-/*import React from 'react';
-import GameMapList from './GameMapList';
-
-const GameList = ({ gameData }) => {
-  // Ensure gameData exists and is an array before using map
-  if (!gameData || !Array.isArray(gameData)) {
-    return <div>No games available</div>;
-  }
-
-  return (
-    <div className='game-app'>
-      {gameData.map((game) => (
-        <div key={game.id}>
-          <h2 className='list-text'>{game.name}</h2>
-          <p className='list-text'>{game.dateReleased}</p>
-          <img className="game-image" src={game.image} alt={game.name} />
-          <GameMapList zombieMaps={game.zombieMaps} />
-        </div>
-      ))}
-    </div>
-  );
-};
-
-export default GameList;
-*/
