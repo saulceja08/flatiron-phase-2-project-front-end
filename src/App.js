@@ -27,10 +27,11 @@ function App() {
 
   return (
     <div>
-      <GameHeader gameData={gameData}/>
-      {/* Pass the gameData as a prop to GameList component */}
-      <GameList gameData={gameData} />
-      <GameFooter />
+      <GameHeader gameData={gameData} />
+      <div>
+        <GameList gameData={gameData} />
+        <GameFooter />
+      </div>
     </div>
   );
 }

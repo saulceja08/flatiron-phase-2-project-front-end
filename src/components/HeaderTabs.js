@@ -12,6 +12,9 @@ function HeaderTabs({gameData}) {
       </div>
       <div className="tabs">
         <SearchBar gameData={gameData} placeholder="Search for ..."/>
+        <div className='tab'>Games+</div>
+        <div className='tab'>Consoles+</div>
+        <div className='tab'>Support+</div>
       </div>
     </div>
   );
