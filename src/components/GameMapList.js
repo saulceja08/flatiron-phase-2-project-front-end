@@ -1,27 +1,42 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
-function GameMapList({ gameData }) {
+function GameMapList() {
   // Ensure gameData exists and is an array before using map
-  if (!gameData || !Array.isArray(gameData)) {
+  const [gameData, setGameData] = useState([]);
+
+  useEffect(() => {
+    fetch('http://localhost:3000/games')
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('Network response was not OK');
+        }
+        return response.json();
+      })
+      .then(data => {
+        // Store the fetched data in state
+        setGameData(data);
+        console.log(data);
+      })
+      .catch(error => {
+        console.error('Error:', error.message);
+      });
+  }, []);
+
+  if (!gameData || !Array.isArray(gameData) || gameData.length === 0) {
     return <div>No games available</div>;
   }
 
   return (
-    <div className='map-app'>
-      {gameData.map((game) => (
-        <div key={game.id}>
-          <h2 className='list-text'>{game.name}</h2>
-          {game.zombieMaps.map((zombieMap) => (
-            <div key={zombieMap.id}>
-              <h3 className='list-text'>{zombieMap.name}</h3>
-              <p className='list-text'>{zombieMap.location}</p>
-              <img className="map-image" src={zombieMap.image} alt={zombieMap.name} />
-            </div>
-          ))}
-        </div>
-      ))}
+    <div className="game-app">
+  {gameData.map((game) => (
+    <div key={game.id} className="game-card">
+      <h2 className="list-text">{game.name}</h2>
+      <p className="list-text">{game.dateReleased}</p>
+      <img className="game-image" src={game.image} alt={game.name} />
     </div>
+  ))}
+</div>
   );
-}
+};
 
 export default GameMapList;

@@ -5,13 +5,14 @@ import GameCreate from './components/GameCreate';
 import GameDetails from './components/GameDetails';
 import GameEdit from './components/GameEdit';
 import {BrowserRouter, Route, Routes} from 'react-router-dom'
+import GameMapList from './components/GameMapList';
 
 function App() {
   return (
     <div>
       <GameHeader/>
       <div>
-        <h1>Call of Duty</h1>
+        <h1 className='tempheader'>Info Page</h1>
       </div>
       <BrowserRouter>
         <Routes>
@@ -21,6 +22,7 @@ function App() {
           <Route path='/detail/:gameid' element={<GameDetails/>}></Route>
         </Routes>
       </BrowserRouter>
+      <GameMapList />
     </div>
   );
 }

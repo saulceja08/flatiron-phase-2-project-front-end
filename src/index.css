@@ -174,3 +174,36 @@ body::before {
   opacity: 0.8;
 }
 
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.tempheader {
+  color: white;
+}
+
+.game-app {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.game-card {
+  /* Add spacing between the cards */
+  margin: 10px;
+  /* Set a fixed width for each card (adjust as needed) */
+  width: 300px;
+  /* Optionally, you can add more styles to the cards, like borders and padding */
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+/* Optionally, you can center the content inside each card */
+.list-text {
+  text-align: center;
+}
+
+/* Optionally, you can set a max-width for the images */
+.game-image {
+  max-width: 100%;
+}
